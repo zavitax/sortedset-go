@@ -5,7 +5,7 @@ Introduction
 
 Every node in the set is associated with these properties.
 
-    type SortedSetNode[K constraints.Ordered, SCORE Number, V interface{}] struct {
+    type SortedSetNode[K constraints.Ordered, SCORE constraints.Ordered, V any] struct {
         key      K       // unique key of this node
         Value    V       // associated data
         score    SCORE   // int64 score to determine the order of this node in the set
